@@ -7,7 +7,7 @@ app = 'dammi-server-wild-sea-4789'
 primary_region = 'bom'
 
 [build]
-  builder = "heroku/buildpacks:22"
+  builder = "paketobuildpacks/builder-jammy-full"
 
 [http_service]
   internal_port = 3001
