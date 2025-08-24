@@ -257,8 +257,9 @@ app.post('/api/upload', async (req, res) => {
 });
 
 // --- Start the server ---
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`Backend server listening at http://localhost:${port}`);
   console.log('Ensure FFmpeg is correctly installed and accessible on your system or that you are using a static binary.');
   console.log('Remember to configure your environment variables for Supabase and R2.');
 });
+ 
